@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+ 
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+header {
+  background-color: red;
+  padding: 40px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+
+nav {
+  float: left;
+  width: 30%;
+  height: 275px; 
+  background: black;
+  padding: 20px;
+}
+
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: black;
+  height: 0px; 
+}
+
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+footer {
+  background-color: red;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>fact page</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="index.html.html">home page</a></li>
+      <li><a href="fact page.html">fact page</a></li>
+      <li><a href="club awards page.html">club awards</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>facts</h1>
+    <p></p>Domestically, the club has won nineteen league titles, eight FA Cups, a record ten League Cups and sixteen FA Community Shields. In international competitions, the club has won six European Cups, three UEFA Cups, four UEFA Super Cups—all English records—and one FIFA Club World Cup.
+    <p>Liverpool hold the record for the earliest Premier League title win, becoming champions in 2019/20 with seven matches remaining</p>
+  </article>
+</section>
+
+<footer>
+  <p>end of page</p>
+</footer>
+
+</body>
+</html>
